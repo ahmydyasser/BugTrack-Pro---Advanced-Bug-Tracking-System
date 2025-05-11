@@ -52,7 +52,7 @@ git clone https://github.com/yourusername/bugtrack-pro.git
 cd bugtrack-pro
 ```
 
-3. Build the project
+3. Build the project  because i am a **nVIMan** "Arch+Hyprland+nVim"
 ```bash
 ./build.sh
 ```
