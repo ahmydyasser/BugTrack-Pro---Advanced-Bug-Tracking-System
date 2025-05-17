@@ -51,7 +51,7 @@ A robust, role-based bug tracking system built with Java Swing, featuring compre
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/bugtrack-pro.git
+git clone https://github.com/ahmydyasser/bugtrack-pro.git
 ```
 
 2. Navigate to project directory
