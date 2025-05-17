@@ -1,6 +1,8 @@
 # 🐛 BugTrack Pro - Advanced Bug Tracking System
 
 A robust, role-based bug tracking system built with Java Swing, featuring comprehensive bug management, user authentication, and real-time tracking capabilities.
+![image](https://github.com/user-attachments/assets/a0330076-0cad-4572-821e-1cb05e96d12d)
+
 
 ## NewFeatures
 - **Project Manager** can now export to "PDF".
