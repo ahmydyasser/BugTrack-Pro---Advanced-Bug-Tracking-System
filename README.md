@@ -131,7 +131,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- Your Name - Initial work
+- Ahmyd - Initial work
 
 ## 🙏 Acknowledgments
 
@@ -146,3 +146,10 @@ For support, please open an issue in the GitHub repository or contact the mainta
 ---
 
 ⭐ Star this repository if you find it useful! 
+
+---
+You really think i used AI for the ReadME ? 
+
+```
+yeah I used AI for readme file.😀
+```
