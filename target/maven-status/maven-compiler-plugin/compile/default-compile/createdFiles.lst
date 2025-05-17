@@ -1,5 +1,6 @@
 UserModule.class
 TesterModule.class
+Printer.class
 Register.class
 Bug.class
 PmGUI.class

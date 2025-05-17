@@ -1,7 +1,6 @@
 # 🐛 BugTrack Pro - Advanced Bug Tracking System
 
 A robust, role-based bug tracking system built with Java Swing, featuring comprehensive bug management, user authentication, and real-time tracking capabilities.
-![image](https://github.com/user-attachments/assets/3c07171f-70fd-4b34-94ef-760338fa2f55)
 
 ## 🌟 Features
 
@@ -45,7 +44,7 @@ A robust, role-based bug tracking system built with Java Swing, featuring compre
 
 1. Clone the repository
 ```bash
-git clone https://github.com/ahmydyasser/bugtrack-pro.git
+git clone https://github.com/yourusername/bugtrack-pro.git
 ```
 
 2. Navigate to project directory
@@ -53,7 +52,7 @@ git clone https://github.com/ahmydyasser/bugtrack-pro.git
 cd bugtrack-pro
 ```
 
-3. Build the project  because i am a **nVIMan** "Arch+Hyprland+nVim"
+3. Build the project
 ```bash
 ./build.sh
 ```
@@ -125,7 +124,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- Ahmyd - Initial work
+- Your Name - Initial work
 
 ## 🙏 Acknowledgments
 
@@ -140,7 +139,3 @@ For support, please open an issue in the GitHub repository or contact the mainta
 ---
 
 ⭐ Star this repository if you find it useful! 
-
----
-You really think i used AI on ReadME ?
-> I probably did  > _ <

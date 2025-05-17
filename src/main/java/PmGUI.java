@@ -1,9 +1,7 @@
 import java.awt.*;
-import javax.swing.*;
 import java.util.*;
-import java.io.FileReader;
+import javax.swing.*;
 import org.json.simple.*;
-import org.json.simple.parser.JSONParser;
 
 public class PmGUI extends JFrame {
   private DefaultListModel<String> bugListModel;
@@ -36,7 +34,8 @@ public class PmGUI extends JFrame {
     projectFilter = new JComboBox<>();
     projectFilter.addItem("All");
     Set<String> projects = pmModule.getAllProjects();
-    for (String project : projects) projectFilter.addItem(project);
+    for (String project : projects)
+      projectFilter.addItem(project);
     filterPanel.add(projectFilter);
 
     filterPanel.add(new JLabel("Status:"));
@@ -60,6 +59,19 @@ public class PmGUI extends JFrame {
     statsLabel = new JLabel();
     add(statsLabel, BorderLayout.SOUTH);
 
+    JButton PrintPDFButton = new JButton("Print PDF");
+    PrintPDFButton.setFont(new Font("Comic Sans MS", Font.BOLD, 14));
+    PrintPDFButton.setBackground(new Color(173, 216, 230));
+    PrintPDFButton.setForeground(new Color(0, 0, 139));
+    PrintPDFButton.addActionListener(e -> {
+      try {
+        pmModule.exportToPDF("../../../data.json", "../../../data.pdf");
+        JOptionPane.showMessageDialog(this, "PDF exported successfully!");
+      } catch (Exception ex) {
+        JOptionPane.showMessageDialog(this, "Error exporting PDF: " +
+                                                ex.getMessage());
+      }
+    });
     JButton logoutButton = new JButton("Logout");
     logoutButton.setFont(new Font("Comic Sans MS", Font.BOLD, 14));
     logoutButton.setBackground(new Color(255, 182, 193));
@@ -69,15 +81,17 @@ public class PmGUI extends JFrame {
       new LoginGUI().setVisible(true);
     });
     JPanel bottomPanel = new JPanel();
+    bottomPanel.add(PrintPDFButton);
     bottomPanel.add(logoutButton);
     add(bottomPanel, BorderLayout.PAGE_END);
   }
 
   private void refreshBugList() {
     bugListModel.clear();
-    String selectedProject = (String) projectFilter.getSelectedItem();
-    String selectedStatus = (String) statusFilter.getSelectedItem();
-    java.util.List<Bug> filtered = pmModule.filterBugs(selectedProject, selectedStatus);
+    String selectedProject = (String)projectFilter.getSelectedItem();
+    String selectedStatus = (String)statusFilter.getSelectedItem();
+    java.util.List<Bug> filtered =
+        pmModule.filterBugs(selectedProject, selectedStatus);
     for (Bug bug : filtered) {
       bugListModel.addElement(bug.toString());
     }
@@ -91,7 +105,10 @@ public class PmGUI extends JFrame {
     stats.append("Open: ").append(open).append(" | Closed: ").append(closed);
     stats.append(" | Bugs per Developer: ");
     for (Map.Entry<String, Integer> entry : devBugs.entrySet()) {
-      stats.append(entry.getKey()).append(": ").append(entry.getValue()).append("; ");
+      stats.append(entry.getKey())
+          .append(": ")
+          .append(entry.getValue())
+          .append("; ");
     }
     statsLabel.setText(stats.toString());
   }
