@@ -2,6 +2,11 @@
 
 A robust, role-based bug tracking system built with Java Swing, featuring comprehensive bug management, user authentication, and real-time tracking capabilities.
 
+## NewFeatures
+- **Project Manager** can now export to "PDF".
+![image](https://github.com/user-attachments/assets/7ef6e7ac-1855-4d75-a126-c2c84c0366ed)
+
+
 ## 🌟 Features
 
 ### 🔐 Multi-Role Authentication
