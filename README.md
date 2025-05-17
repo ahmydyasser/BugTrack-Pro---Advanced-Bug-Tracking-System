@@ -66,7 +66,7 @@ cd bugtrack-pro
 
 4. Run the application
 ```bash
-java -jar target/bugtrack-pro.jar
+ java -jar target/bug-tracker-1.0-SNAPSHOT.jar
 ```
 
 ## 📝 Usage
